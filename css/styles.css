@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(193, 213, 240);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header{
+    background-color: rgb(62, 181, 255);
+}
+.header h1{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+.palabraoculta{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.img-pupi{
+    display: block;
+    height: 29rem;
+    width: 100%;
+    margin: auto;
+}
+
+.grilla{
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap:1rem;
+    margin-top: 1rem;
+}
+.btn{
+    cursor: pointer;
+    font-size: 2.5rem; 
+    border: none;
+    background-color: rgb(240, 236, 236);
+    color: white; 
+}
+.btn:hover{
+    background-color: rgb(213, 199, 255);
+}
+.btn-primary{
+    background-color: rgb(53, 53, 245);
+}
+.btn-success{
+    background-color: rgb(5, 177, 5);
+}
+.btn-danger {
+    background-color:rgb(251, 52, 52);
+}
+.btn-r{
+    background-color: rgb(2, 88, 187) ;
+    border: 1px solid white;
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    width: 80%;
+}
+@media screen and (min-width:768px) {
+    .img-pupi{
+        width: 30rem;
+        margin-left: 2rem;
+        order: 1;
+    }
+    .btn-r{
+        width: 40%;
+    }
+    .grilla{
+        
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+        gap:1rem;
+    }
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .palabraoculta{
+        margin: auto;
+        font-size: 6rem;
+    }
+    
+}
+
+.footer{
+    background-color: rgb(62, 181, 255);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
